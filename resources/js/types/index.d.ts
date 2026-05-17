@@ -24,6 +24,10 @@ export interface SharedData extends PageProps {
     auth: Auth;
     ziggy: Config & { location: string };
     sidebarOpen: boolean;
+    translations: {
+        welcome: Record<string, string>;
+    };
+    locale: string;
 }
 
 export interface User {
